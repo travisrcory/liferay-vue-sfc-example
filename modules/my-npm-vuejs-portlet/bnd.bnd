@@ -1,0 +1,6 @@
+Bundle-Name: my-npm-vuejs-portlet
+Bundle-SymbolicName: com.liferay.npm.vuejs
+Bundle-Version: 1.0.0
+Export-Package: com.liferay.npm.vuejs.constants
+Web-ContextPath: /my-npm-vuejs-portlet
+-includeresource: package.json
