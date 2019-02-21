@@ -1,8 +1,22 @@
 {
+	"config": {
+		"imports": {
+			"frontend-js-node-shims": {
+				"path": ">=0.0.0",
+				"url": ">=0.11.0",
+				"util": ">=0.10.3",
+				"events": ">=1.1.1"
+			}
+		}
+	},
 	"exclude": {
 		"*": [
 			"test?(s)/**/*",
 			"test.js"
+		],
+		"readable-stream": [
+			"lib/_stream_writable.js",
+			"lib/_stream_readable.js"
 		]
 	}
 }
