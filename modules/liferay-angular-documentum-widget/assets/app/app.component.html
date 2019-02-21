@@ -1,0 +1,50 @@
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+<div class="container-app">
+  <div class="row-custom">
+    <div class="col-md-4 mat-elevation-z8">
+          <router-outlet></router-outlet>  
+          <button mat-button> 
+                  <mat-icon class="icon">archive</mat-icon>
+                  <span class="label"><b>Dossier disponible </b></span>                   
+              </button>
+
+          <div class="container-app-botton"></div>
+          
+        <app-file-explorer-treeview>
+           <span class="k-icon k-i-loading" style="color: #ff6358"></span>
+        </app-file-explorer-treeview>
+    </div>
+    <div class="col-md-8">
+          <div class="mat-elevation-z8  text-center">
+              <button mat-button> 
+                      <mat-icon class="icon">create_new_folder</mat-icon>
+                      <span class="label"><b>Dossier</b></span>                   
+              </button>
+              <button mat-button> 
+                      <mat-icon class="icon">add_box</mat-icon>
+                      <span class="label"><b>Document</b></span>                   
+              </button>
+              
+              <button mat-button> 
+                      <mat-icon class="icon">vertical_align_bottom</mat-icon>
+                      <span class="label"><b>Télécharger</b></span>                   
+              </button>
+              <button mat-button> 
+                      <mat-icon class="icon">vertical_align_top</mat-icon>
+                      <span class="label"><b>Importer</b></span>                   
+              </button>
+              <div class="container-app-botton"></div>
+              <app-documents-list-table [folderObjectId]="dataService.objectId"></app-documents-list-table>
+          </div>
+      </div>
+  </div>
+</div>
+
+<div class="container-app">
+        <div>     
+                <div class="col-md-12 mat-elevation-z8">
+                        <app-metadata-info  [folderId]="dataService.objectMetadataId"  [typeObject]="dataService.objectMetadataType"></app-metadata-info>    
+                </div>          
+        </div>  
+</div>

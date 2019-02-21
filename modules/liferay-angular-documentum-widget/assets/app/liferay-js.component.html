@@ -1,0 +1,56 @@
+<p>&nbsp;</p>
+<form class="customForm" ngForm="form" (ngSubmit)="submit()">
+	<div class="sheet sheet-lg">
+		<div class="sheet-header">
+			<h2 class="sheet-title"></h2>
+		</div>
+
+
+		<div class="sheet-section">
+			<div class="form-group">
+
+				<input class="form-control" type="text" [(ngModel)]="url" name="url" placeholder="Input your request url here ..." />
+			</div>
+		</div>
+		<div class="sheet-footer sheet-footer-btn-block-sm-down">
+			<div class="btn-group">
+				<div class="btn-group-item">
+					<button class="btn btn-primary" type="submit">Get Response</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</form>
+<p>&nbsp;</p>
+<form class="customForm" ngForm="form" (ngSubmit)="addFolder()">
+		<div class="sheet sheet-lg">
+			<div class="sheet-header">
+				<h2 class="sheet-title"></h2>
+			</div>
+	
+	
+			<div class="sheet-section">
+				<div class="form-group">
+	
+						<input class="form-control" type="text" [(ngModel)]="folderName" name="folderName"
+						placeholder="Enter the name of folder you want to create..." />
+				</div>
+			</div>
+			<div class="sheet-footer sheet-footer-btn-block-sm-down">
+				<div class="btn-group">
+					<div class="btn-group-item">
+							<button class="btn btn-primary" type="submit">Add Folder</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</form>
+
+<br>
+<div>
+	<div>
+		<span>Response :</span>
+	</div>
+	<textarea class="form-control" id="responseArea" cols="100" name="json" rows="10" [(ngModel)]="json"></textarea>
+</div>
+

@@ -1,0 +1,13 @@
+.k-treeview .k-in.k-state-selected {
+    background-color: #28a745 !important;
+    color: #fff;
+}
+
+.k-grid .k-state-selected { 
+    background: blue; 
+}
+
+.container-app-botton {
+    margin-bottom: 10px;
+
+}

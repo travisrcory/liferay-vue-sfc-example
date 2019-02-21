@@ -1,0 +1,207 @@
+<div id="metadata_profile">
+  <h5 class="ng-binding">Métadonnées:</h5>
+  <hr>
+  <mat-accordion class="example-headers-align">
+      <mat-expansion-panel [expanded]="step === 0" (opened)="setStep(0)" hideToggle>
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            ATTRIBUTS UTILISATEUR
+          </mat-panel-title>
+          <mat-panel-description>
+          Description d'object, rôle, attributs custom
+            <mat-icon>account_circle</mat-icon>
+          </mat-panel-description>
+        </mat-expansion-panel-header>
+        <table class="table table-sm">          
+            <tbody>
+              <tr>
+                  <th scope="row">object_name</th>
+                <td>Entente de confidentialité</td>
+              </tr>
+              <tr>
+                  <th scope="row">title</th>
+                  <td>Entente de confidentialité</td>
+              </tr>
+              <tr>
+                  <th scope="row">owner_name</th>
+                  <td>dcr_import</td>
+              </tr>
+              <tr>
+                  <th scope="row">acl_domain</th>
+                  <td>desj006dev_03</td>
+              </tr>
+              <tr>
+                  <th scope="row">acl_name</th>
+                  <td>dcr_adm_aj_acl</td>
+              </tr>
+              <tr>
+                  <th scope="row">dcr_filenet_id</th>
+                  <td>dcr_adm_aj_acl</td>
+              </tr>
+              <tr>
+                  <th scope="row">dcr_filenet_id</th>
+                  <td>1122475056</td>
+              </tr>
+              <tr>
+                  <th scope="row">dcr_nom</th>
+                  <td></td>
+              </tr>
+              <tr>
+                  <th scope="row">...</th>
+                  <td>...</td>
+              </tr>
+            </tbody>
+          </table>  
+        <mat-action-row>
+          <button mat-button color="primary" (click)="nextStep()">Next</button>
+        </mat-action-row>
+      </mat-expansion-panel>
+    
+      <mat-expansion-panel [expanded]="step === 1" (opened)="setStep(1)" hideToggle>
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            ATTRIBUTS SYSTÈMES
+          </mat-panel-title>
+          <mat-panel-description>
+            Métadonnées du système
+            <mat-icon>settings_applications</mat-icon>
+          </mat-panel-description>
+        </mat-expansion-panel-header>
+    
+        <table class="table table-sm">          
+            <tbody>
+              <tr>
+                <th scope="row">r_object_type</th>
+                <td>djdcr_dossier_adm</td>
+              </tr>
+              <tr>
+                  <th scope="row">r_creation_date</th>
+                  <td>10/31/2017 2:49:00 PM</td>
+              </tr>
+              <tr>
+                  <th scope="row">r_modify_date</th>
+                  <td>10/31/2017 2:49:00 PM</td>
+              </tr>
+              <tr>
+                  <th scope="row">r_modifier</th>
+                  <td>dcr_import</td>
+              </tr>
+              <tr>
+                  <th scope="row">r_folder_path</th>
+                  <td>/DCR/Activités administratives/Affaires juridiques/Entente de confidentialité</td>
+              </tr>
+              <tr>
+                  <th scope="row">r_object_id</th>
+                  <td>0bd6e292802160ca</td>
+              </tr>
+              <tr>
+                  <th scope="row">...</th>
+                  <td>...</td>
+              </tr>
+            </tbody>
+          </table>  
+    
+        <mat-action-row>
+          <button mat-button color="warn" (click)="prevStep()">Previous</button>
+          <button mat-button color="primary" (click)="nextStep()">Next</button>
+        </mat-action-row>
+      </mat-expansion-panel>
+    
+      <mat-expansion-panel [expanded]="step === 2" (opened)="setStep(2)" hideToggle>
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            ATTRIBUTS APPLICATIFS
+          </mat-panel-title>
+          <mat-panel-description>
+            Attributs applicatif au niveau du documentum
+            <mat-icon>apps</mat-icon>
+          </mat-panel-description>
+        </mat-expansion-panel-header>
+    
+        <table class="table table-sm">          
+            <tbody>
+              <tr>
+                <th scope="row">a_is_hidden</th>
+                <td>F</td>
+              </tr>
+              <tr>
+                  <th scope="row">a_link_resolved</th>
+                  <td>F</td>
+              </tr>
+              <tr>
+                  <th scope="row">a_full_text</th>
+                  <td>T</td>
+              </tr>
+              <tr>
+                  <th scope="row">a_is_template</th>
+                  <td>F</td>
+              </tr>
+              <tr>
+                  <th scope="row">a_is_signed</th>
+                  <td>F</td>
+              </tr>
+              <tr>
+                  <th scope="row">...</th>
+                  <td>...</td>
+              </tr>
+            </tbody>
+          </table>  
+    
+        <mat-action-row>
+          <button mat-button color="warn" (click)="prevStep()">Previous</button>
+          <button mat-button color="primary" (click)="nextStep()">Next</button>
+        </mat-action-row>
+      </mat-expansion-panel>
+
+      <mat-expansion-panel [expanded]="step === 3" (opened)="setStep(3)" hideToggle>
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            ATTRIBUTS INTERNE
+          </mat-panel-title>
+          <mat-panel-description>
+            Attributes interne du documentum
+            <mat-icon>keyboard_backspace</mat-icon>
+          </mat-panel-description>
+        </mat-expansion-panel-header>
+    
+        <table class="table table-sm">          
+            <tbody>
+              <tr>
+                <th scope="row">i_is_deleted</th>
+                <td>F</td>
+              </tr>
+              <tr>
+                  <th scope="row">i_has_folder</th>
+                  <td>T</td>
+                </tr>
+              <tr>
+                  <th scope="row">i_folder_id</th>
+                  <td>0bd6e292802160b3</td>
+                </tr>
+              <tr>
+                  <th scope="row">i_chronicle_id</th>
+                  <td>0bd6e292802160ca</td>
+              </tr>
+              <tr>
+                  <th scope="row">i_is_replica</th>
+                  <td>F</td>
+              </tr>
+              <tr>
+                  <th scope="row">...</th>
+                  <td>...</td>
+              </tr>
+            </tbody>
+          </table>  
+        
+        <mat-action-row>
+          <button mat-button color="warn" (click)="prevStep()">Previous</button>
+          <button mat-button color="primary" (click)="nextStep()">End</button>
+        </mat-action-row>
+      </mat-expansion-panel>
+
+    </mat-accordion>
+  </div>
+  
+  <!-- Copyright 2018 Google Inc. All Rights Reserved.
+      Use of this source code is governed by an MIT-style license that
+      can be found in the LICENSE file at http://angular.io/license -->

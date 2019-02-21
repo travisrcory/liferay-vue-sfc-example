@@ -1,0 +1,24 @@
+<div class="card">
+    <div class="card-header">
+      Metadata
+    </div>
+    <div class="card-body">
+      <form>
+          <div class="form-group">
+            <label for="exampleFormControlInput1">Element name</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="{{currentElement.name}}">
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlInput1">Type</label>
+            <p><i *ngIf="currentElement.isFolder" class="fas fa-folder"></i> <i *ngIf="!currentElement.isFolder" class="fas fa-file"></i></p>
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlInput1">Author</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Author" disabled>
+          </div>
+      </form>
+    </div>
+    <div class="card-footer">
+      <button class="btn btn-primary">Modify</button>
+    </div>
+  </div>
